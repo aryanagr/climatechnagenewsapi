@@ -43,9 +43,13 @@ newspapers.forEach(newspaper=>{
     })
     .catch((err)=>{console.log(err)})
 })
+const message=[
+    "welcome to  climate chnage news api",
+    " for news visit for news api visit https://climatechnageneswapi.herokuapp.com/news",
+    "for news from specfic media house like timeofindia visit  https://climatechnageneswapi.herokuapp.com/news/timesofindia"
+];
 app.get('/',(req,res)=>{
-   res.json("hello");
-    //res.send("hello");
+   res.json(message)
 })
 app.get('/news',(req,res)=>{
     res.json(articles)
