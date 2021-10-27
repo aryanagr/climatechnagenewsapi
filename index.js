@@ -3,7 +3,7 @@ const axios=require('axios');
 const cheerio=require('cheerio');
 const { prependTo } = require('cheerio/lib/api/manipulation');
 const app=express();
-const PORT=8000;
+const PORT=process.env.PORT || 4000;
 
 const newspapers=[
     {
